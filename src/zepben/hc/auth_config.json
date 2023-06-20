@@ -1,0 +1,8 @@
+{
+  "host": "<some_host>",
+  "port": 443,
+  "protocol": "https",
+  "client_id": "<some_client_id>",
+  "username": "<some_user>",
+  "password": "<some_pass>"
+}

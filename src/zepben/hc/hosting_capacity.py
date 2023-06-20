@@ -8,12 +8,12 @@ from zepben.eas.client.eas_client import EasClient, WorkPackageConfig
 async def main():
     auth_config = read_json_config("auth_config.json")
     eas_client = EasClient(
-        host="<some_host>",
-        port=443,
+        host=auth_config["host"],
+        port=auth_config["port"],
         protocol="https",
-        client_id="<some_client_id>",
-        username="<some_user>",
-        password="<some_pass>",
+        client_id=auth_config["client_id"],
+        username=auth_config["username"],
+        password=auth_config["password"],
         verify_certificate=True,
     )
 
